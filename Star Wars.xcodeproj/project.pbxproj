@@ -1,0 +1,915 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		49674698274A190700242461 /* FilmsApiRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49674697274A190700242461 /* FilmsApiRepositoryMock.swift */; };
+		4967469A274A1A3600242461 /* FilmsViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49674699274A1A3600242461 /* FilmsViewModelTest.swift */; };
+		4967469C274A1B9F00242461 /* StarshipsListViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4967469B274A1B9F00242461 /* StarshipsListViewControllerTest.swift */; };
+		4967469E274A2DA200242461 /* StarshipDetailsViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4967469D274A2DA200242461 /* StarshipDetailsViewControllerTest.swift */; };
+		496746A0274A328D00242461 /* FilmsListViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4967469F274A328D00242461 /* FilmsListViewControllerTest.swift */; };
+		4967D4EF274A35430072168A /* FilmsDetailsViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4967D4EE274A35430072168A /* FilmsDetailsViewControllerTest.swift */; };
+		496E8C812748F1A400B41FA7 /* StarshipDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496E8C7F2748F1A400B41FA7 /* StarshipDetailsViewController.swift */; };
+		496E8C822748F1A400B41FA7 /* StarshipDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 496E8C802748F1A400B41FA7 /* StarshipDetailsViewController.xib */; };
+		496E8C862749286200B41FA7 /* StarshipsApiRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496E8C852749286200B41FA7 /* StarshipsApiRepositoryMock.swift */; };
+		496E8C882749324700B41FA7 /* StarshipsViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496E8C872749324700B41FA7 /* StarshipsViewModelTest.swift */; };
+		4972355B2747DB9F00B59201 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4972355A2747DB9F00B59201 /* AppDelegate.swift */; };
+		4972355D2747DB9F00B59201 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4972355C2747DB9F00B59201 /* SceneDelegate.swift */; };
+		497235642747DBA000B59201 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 497235632747DBA000B59201 /* Assets.xcassets */; };
+		497235672747DBA000B59201 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 497235652747DBA000B59201 /* LaunchScreen.storyboard */; };
+		497235722747DBA000B59201 /* Star_WarsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497235712747DBA000B59201 /* Star_WarsTests.swift */; };
+		4972357C2747DBA000B59201 /* Star_WarsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4972357B2747DBA000B59201 /* Star_WarsUITests.swift */; };
+		4972357E2747DBA000B59201 /* Star_WarsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4972357D2747DBA000B59201 /* Star_WarsUITestsLaunchTests.swift */; };
+		497235902747E38F00B59201 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4972358E2747E38F00B59201 /* MainViewController.swift */; };
+		497235982747E63400B59201 /* FilmsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497235962747E63400B59201 /* FilmsListViewController.swift */; };
+		497235992747E63400B59201 /* FilmsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 497235972747E63400B59201 /* FilmsListViewController.xib */; };
+		497235A32747FB7F00B59201 /* FilmsApiRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497235A22747FB7F00B59201 /* FilmsApiRepository.swift */; };
+		497235A62747FC1100B59201 /* FilmEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497235A52747FC1100B59201 /* FilmEntities.swift */; };
+		497235A92747FD0100B59201 /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = 497235A82747FD0100B59201 /* PromiseKit */; };
+		497235AC2747FEC800B59201 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 497235AB2747FEC800B59201 /* Alamofire */; };
+		497235B02748014800B59201 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497235AF2748014800B59201 /* NetworkManager.swift */; };
+		497235B42748102E00B59201 /* FilmsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497235B32748102E00B59201 /* FilmsViewModel.swift */; };
+		49C297272748C35E00A36A7C /* FilmsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C297252748C35E00A36A7C /* FilmsTableViewCell.swift */; };
+		49C297282748C35E00A36A7C /* FilmsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49C297262748C35E00A36A7C /* FilmsTableViewCell.xib */; };
+		49C2972B2748CF8600A36A7C /* FilmDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C297292748CF8600A36A7C /* FilmDetailsViewController.swift */; };
+		49C2972C2748CF8600A36A7C /* FilmDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49C2972A2748CF8600A36A7C /* FilmDetailsViewController.xib */; };
+		49C2972F2748EB5C00A36A7C /* StarshipsApiRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C2972E2748EB5C00A36A7C /* StarshipsApiRepository.swift */; };
+		49C297322748EBBA00A36A7C /* StarshipEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C297312748EBBA00A36A7C /* StarshipEntities.swift */; };
+		49C297352748ED6700A36A7C /* StarshipsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C297342748ED6700A36A7C /* StarshipsViewModel.swift */; };
+		49C2973B2748EE4000A36A7C /* StarshipsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C297392748EE4000A36A7C /* StarshipsListViewController.swift */; };
+		49C2973C2748EE4000A36A7C /* StarshipsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49C2973A2748EE4000A36A7C /* StarshipsListViewController.xib */; };
+		49C297402748EEBC00A36A7C /* StarshipsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C2973E2748EEBC00A36A7C /* StarshipsTableViewCell.swift */; };
+		49C297412748EEBC00A36A7C /* StarshipsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49C2973F2748EEBC00A36A7C /* StarshipsTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4972356E2747DBA000B59201 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4972354F2747DB9E00B59201 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 497235562747DB9E00B59201;
+			remoteInfo = "Star Wars";
+		};
+		497235782747DBA000B59201 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4972354F2747DB9E00B59201 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 497235562747DB9E00B59201;
+			remoteInfo = "Star Wars";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		49674697274A190700242461 /* FilmsApiRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsApiRepositoryMock.swift; sourceTree = "<group>"; };
+		49674699274A1A3600242461 /* FilmsViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsViewModelTest.swift; sourceTree = "<group>"; };
+		4967469B274A1B9F00242461 /* StarshipsListViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipsListViewControllerTest.swift; sourceTree = "<group>"; };
+		4967469D274A2DA200242461 /* StarshipDetailsViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipDetailsViewControllerTest.swift; sourceTree = "<group>"; };
+		4967469F274A328D00242461 /* FilmsListViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsListViewControllerTest.swift; sourceTree = "<group>"; };
+		4967D4EE274A35430072168A /* FilmsDetailsViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsDetailsViewControllerTest.swift; sourceTree = "<group>"; };
+		496E8C7F2748F1A400B41FA7 /* StarshipDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipDetailsViewController.swift; sourceTree = "<group>"; };
+		496E8C802748F1A400B41FA7 /* StarshipDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StarshipDetailsViewController.xib; sourceTree = "<group>"; };
+		496E8C852749286200B41FA7 /* StarshipsApiRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipsApiRepositoryMock.swift; sourceTree = "<group>"; };
+		496E8C872749324700B41FA7 /* StarshipsViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipsViewModelTest.swift; sourceTree = "<group>"; };
+		497235572747DB9F00B59201 /* Star Wars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Star Wars.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4972355A2747DB9F00B59201 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4972355C2747DB9F00B59201 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		497235632747DBA000B59201 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		497235662747DBA000B59201 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		497235682747DBA000B59201 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4972356D2747DBA000B59201 /* Star WarsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Star WarsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		497235712747DBA000B59201 /* Star_WarsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Star_WarsTests.swift; sourceTree = "<group>"; };
+		497235772747DBA000B59201 /* Star WarsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Star WarsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4972357B2747DBA000B59201 /* Star_WarsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Star_WarsUITests.swift; sourceTree = "<group>"; };
+		4972357D2747DBA000B59201 /* Star_WarsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Star_WarsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4972358E2747E38F00B59201 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		497235962747E63400B59201 /* FilmsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsListViewController.swift; sourceTree = "<group>"; };
+		497235972747E63400B59201 /* FilmsListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilmsListViewController.xib; sourceTree = "<group>"; };
+		497235A22747FB7F00B59201 /* FilmsApiRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsApiRepository.swift; sourceTree = "<group>"; };
+		497235A52747FC1100B59201 /* FilmEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmEntities.swift; sourceTree = "<group>"; };
+		497235AF2748014800B59201 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		497235B32748102E00B59201 /* FilmsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsViewModel.swift; sourceTree = "<group>"; };
+		49C297252748C35E00A36A7C /* FilmsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsTableViewCell.swift; sourceTree = "<group>"; };
+		49C297262748C35E00A36A7C /* FilmsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilmsTableViewCell.xib; sourceTree = "<group>"; };
+		49C297292748CF8600A36A7C /* FilmDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetailsViewController.swift; sourceTree = "<group>"; };
+		49C2972A2748CF8600A36A7C /* FilmDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilmDetailsViewController.xib; sourceTree = "<group>"; };
+		49C2972E2748EB5C00A36A7C /* StarshipsApiRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipsApiRepository.swift; sourceTree = "<group>"; };
+		49C297312748EBBA00A36A7C /* StarshipEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipEntities.swift; sourceTree = "<group>"; };
+		49C297342748ED6700A36A7C /* StarshipsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipsViewModel.swift; sourceTree = "<group>"; };
+		49C297392748EE4000A36A7C /* StarshipsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipsListViewController.swift; sourceTree = "<group>"; };
+		49C2973A2748EE4000A36A7C /* StarshipsListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StarshipsListViewController.xib; sourceTree = "<group>"; };
+		49C2973E2748EEBC00A36A7C /* StarshipsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipsTableViewCell.swift; sourceTree = "<group>"; };
+		49C2973F2748EEBC00A36A7C /* StarshipsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StarshipsTableViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		497235542747DB9E00B59201 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				497235A92747FD0100B59201 /* PromiseKit in Frameworks */,
+				497235AC2747FEC800B59201 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4972356A2747DBA000B59201 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		497235742747DBA000B59201 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4972354E2747DB9E00B59201 = {
+			isa = PBXGroup;
+			children = (
+				497235592747DB9F00B59201 /* Star Wars */,
+				497235702747DBA000B59201 /* Star WarsTests */,
+				4972357A2747DBA000B59201 /* Star WarsUITests */,
+				497235582747DB9F00B59201 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		497235582747DB9F00B59201 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				497235572747DB9F00B59201 /* Star Wars.app */,
+				4972356D2747DBA000B59201 /* Star WarsTests.xctest */,
+				497235772747DBA000B59201 /* Star WarsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		497235592747DB9F00B59201 /* Star Wars */ = {
+			isa = PBXGroup;
+			children = (
+				497235AD2748007100B59201 /* Library */,
+				4972358A2747DD2300B59201 /* Modules */,
+				4972358E2747E38F00B59201 /* MainViewController.swift */,
+				4972355A2747DB9F00B59201 /* AppDelegate.swift */,
+				4972355C2747DB9F00B59201 /* SceneDelegate.swift */,
+				497235632747DBA000B59201 /* Assets.xcassets */,
+				497235652747DBA000B59201 /* LaunchScreen.storyboard */,
+				497235682747DBA000B59201 /* Info.plist */,
+			);
+			path = "Star Wars";
+			sourceTree = "<group>";
+		};
+		497235702747DBA000B59201 /* Star WarsTests */ = {
+			isa = PBXGroup;
+			children = (
+				497235712747DBA000B59201 /* Star_WarsTests.swift */,
+			);
+			path = "Star WarsTests";
+			sourceTree = "<group>";
+		};
+		4972357A2747DBA000B59201 /* Star WarsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4972357B2747DBA000B59201 /* Star_WarsUITests.swift */,
+				4972357D2747DBA000B59201 /* Star_WarsUITestsLaunchTests.swift */,
+			);
+			path = "Star WarsUITests";
+			sourceTree = "<group>";
+		};
+		4972358A2747DD2300B59201 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				4972358C2747DD5B00B59201 /* Films */,
+				4972358D2747DD6200B59201 /* Starships */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		4972358C2747DD5B00B59201 /* Films */ = {
+			isa = PBXGroup;
+			children = (
+				497235922747E5C200B59201 /* Views */,
+				497235932747E5D700B59201 /* ViewModel */,
+				497235A42747FBDF00B59201 /* Entities */,
+				497235952747E5F600B59201 /* Repository */,
+			);
+			path = Films;
+			sourceTree = "<group>";
+		};
+		4972358D2747DD6200B59201 /* Starships */ = {
+			isa = PBXGroup;
+			children = (
+				49C297362748EDF500A36A7C /* Views */,
+				49C297332748ED4D00A36A7C /* ViewModel */,
+				49C297302748EB9300A36A7C /* Entities */,
+				49C2972D2748EB2C00A36A7C /* Repository */,
+			);
+			path = Starships;
+			sourceTree = "<group>";
+		};
+		497235922747E5C200B59201 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				497235B127480F9D00B59201 /* FilmsList */,
+				497235B227480FAC00B59201 /* FilmDetails */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		497235932747E5D700B59201 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				497235B32748102E00B59201 /* FilmsViewModel.swift */,
+				49674699274A1A3600242461 /* FilmsViewModelTest.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		497235952747E5F600B59201 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				497235A22747FB7F00B59201 /* FilmsApiRepository.swift */,
+				49674697274A190700242461 /* FilmsApiRepositoryMock.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		497235A42747FBDF00B59201 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				497235A52747FC1100B59201 /* FilmEntities.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		497235AD2748007100B59201 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				497235AE2748007B00B59201 /* Network */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		497235AE2748007B00B59201 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				497235AF2748014800B59201 /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		497235B127480F9D00B59201 /* FilmsList */ = {
+			isa = PBXGroup;
+			children = (
+				49C297242748C33200A36A7C /* Cells */,
+				497235962747E63400B59201 /* FilmsListViewController.swift */,
+				497235972747E63400B59201 /* FilmsListViewController.xib */,
+				4967469F274A328D00242461 /* FilmsListViewControllerTest.swift */,
+			);
+			path = FilmsList;
+			sourceTree = "<group>";
+		};
+		497235B227480FAC00B59201 /* FilmDetails */ = {
+			isa = PBXGroup;
+			children = (
+				49C297292748CF8600A36A7C /* FilmDetailsViewController.swift */,
+				49C2972A2748CF8600A36A7C /* FilmDetailsViewController.xib */,
+				4967D4EE274A35430072168A /* FilmsDetailsViewControllerTest.swift */,
+			);
+			path = FilmDetails;
+			sourceTree = "<group>";
+		};
+		49C297242748C33200A36A7C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				49C297252748C35E00A36A7C /* FilmsTableViewCell.swift */,
+				49C297262748C35E00A36A7C /* FilmsTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		49C2972D2748EB2C00A36A7C /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				49C2972E2748EB5C00A36A7C /* StarshipsApiRepository.swift */,
+				496E8C852749286200B41FA7 /* StarshipsApiRepositoryMock.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		49C297302748EB9300A36A7C /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				49C297312748EBBA00A36A7C /* StarshipEntities.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		49C297332748ED4D00A36A7C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				49C297342748ED6700A36A7C /* StarshipsViewModel.swift */,
+				496E8C872749324700B41FA7 /* StarshipsViewModelTest.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		49C297362748EDF500A36A7C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				49C297382748EE1B00A36A7C /* StarshipsList */,
+				49C297372748EE0C00A36A7C /* StarshipDetails */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		49C297372748EE0C00A36A7C /* StarshipDetails */ = {
+			isa = PBXGroup;
+			children = (
+				496E8C7F2748F1A400B41FA7 /* StarshipDetailsViewController.swift */,
+				496E8C802748F1A400B41FA7 /* StarshipDetailsViewController.xib */,
+				4967469D274A2DA200242461 /* StarshipDetailsViewControllerTest.swift */,
+			);
+			path = StarshipDetails;
+			sourceTree = "<group>";
+		};
+		49C297382748EE1B00A36A7C /* StarshipsList */ = {
+			isa = PBXGroup;
+			children = (
+				49C2973D2748EE9400A36A7C /* Cells */,
+				49C297392748EE4000A36A7C /* StarshipsListViewController.swift */,
+				49C2973A2748EE4000A36A7C /* StarshipsListViewController.xib */,
+				4967469B274A1B9F00242461 /* StarshipsListViewControllerTest.swift */,
+			);
+			path = StarshipsList;
+			sourceTree = "<group>";
+		};
+		49C2973D2748EE9400A36A7C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				49C2973E2748EEBC00A36A7C /* StarshipsTableViewCell.swift */,
+				49C2973F2748EEBC00A36A7C /* StarshipsTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		497235562747DB9E00B59201 /* Star Wars */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 497235812747DBA000B59201 /* Build configuration list for PBXNativeTarget "Star Wars" */;
+			buildPhases = (
+				497235532747DB9E00B59201 /* Sources */,
+				497235542747DB9E00B59201 /* Frameworks */,
+				497235552747DB9E00B59201 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Star Wars";
+			packageProductDependencies = (
+				497235A82747FD0100B59201 /* PromiseKit */,
+				497235AB2747FEC800B59201 /* Alamofire */,
+			);
+			productName = "Star Wars";
+			productReference = 497235572747DB9F00B59201 /* Star Wars.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4972356C2747DBA000B59201 /* Star WarsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 497235842747DBA000B59201 /* Build configuration list for PBXNativeTarget "Star WarsTests" */;
+			buildPhases = (
+				497235692747DBA000B59201 /* Sources */,
+				4972356A2747DBA000B59201 /* Frameworks */,
+				4972356B2747DBA000B59201 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4972356F2747DBA000B59201 /* PBXTargetDependency */,
+			);
+			name = "Star WarsTests";
+			productName = "Star WarsTests";
+			productReference = 4972356D2747DBA000B59201 /* Star WarsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		497235762747DBA000B59201 /* Star WarsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 497235872747DBA000B59201 /* Build configuration list for PBXNativeTarget "Star WarsUITests" */;
+			buildPhases = (
+				497235732747DBA000B59201 /* Sources */,
+				497235742747DBA000B59201 /* Frameworks */,
+				497235752747DBA000B59201 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				497235792747DBA000B59201 /* PBXTargetDependency */,
+			);
+			name = "Star WarsUITests";
+			productName = "Star WarsUITests";
+			productReference = 497235772747DBA000B59201 /* Star WarsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4972354F2747DB9E00B59201 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					497235562747DB9E00B59201 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					4972356C2747DBA000B59201 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 497235562747DB9E00B59201;
+					};
+					497235762747DBA000B59201 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 497235562747DB9E00B59201;
+					};
+				};
+			};
+			buildConfigurationList = 497235522747DB9E00B59201 /* Build configuration list for PBXProject "Star Wars" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4972354E2747DB9E00B59201;
+			packageReferences = (
+				497235A72747FD0100B59201 /* XCRemoteSwiftPackageReference "PromiseKit" */,
+				497235AA2747FEC800B59201 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = 497235582747DB9F00B59201 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				497235562747DB9E00B59201 /* Star Wars */,
+				4972356C2747DBA000B59201 /* Star WarsTests */,
+				497235762747DBA000B59201 /* Star WarsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		497235552747DB9E00B59201 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49C2973C2748EE4000A36A7C /* StarshipsListViewController.xib in Resources */,
+				49C297412748EEBC00A36A7C /* StarshipsTableViewCell.xib in Resources */,
+				497235672747DBA000B59201 /* LaunchScreen.storyboard in Resources */,
+				497235992747E63400B59201 /* FilmsListViewController.xib in Resources */,
+				49C297282748C35E00A36A7C /* FilmsTableViewCell.xib in Resources */,
+				497235642747DBA000B59201 /* Assets.xcassets in Resources */,
+				49C2972C2748CF8600A36A7C /* FilmDetailsViewController.xib in Resources */,
+				496E8C822748F1A400B41FA7 /* StarshipDetailsViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4972356B2747DBA000B59201 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		497235752747DBA000B59201 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		497235532747DB9E00B59201 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49C297322748EBBA00A36A7C /* StarshipEntities.swift in Sources */,
+				49C297402748EEBC00A36A7C /* StarshipsTableViewCell.swift in Sources */,
+				497235902747E38F00B59201 /* MainViewController.swift in Sources */,
+				49C297272748C35E00A36A7C /* FilmsTableViewCell.swift in Sources */,
+				4972355B2747DB9F00B59201 /* AppDelegate.swift in Sources */,
+				497235982747E63400B59201 /* FilmsListViewController.swift in Sources */,
+				49C2972F2748EB5C00A36A7C /* StarshipsApiRepository.swift in Sources */,
+				497235B42748102E00B59201 /* FilmsViewModel.swift in Sources */,
+				49C297352748ED6700A36A7C /* StarshipsViewModel.swift in Sources */,
+				496E8C812748F1A400B41FA7 /* StarshipDetailsViewController.swift in Sources */,
+				49C2973B2748EE4000A36A7C /* StarshipsListViewController.swift in Sources */,
+				497235A62747FC1100B59201 /* FilmEntities.swift in Sources */,
+				49C2972B2748CF8600A36A7C /* FilmDetailsViewController.swift in Sources */,
+				497235B02748014800B59201 /* NetworkManager.swift in Sources */,
+				497235A32747FB7F00B59201 /* FilmsApiRepository.swift in Sources */,
+				4972355D2747DB9F00B59201 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		497235692747DBA000B59201 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				496E8C862749286200B41FA7 /* StarshipsApiRepositoryMock.swift in Sources */,
+				4967469A274A1A3600242461 /* FilmsViewModelTest.swift in Sources */,
+				496E8C882749324700B41FA7 /* StarshipsViewModelTest.swift in Sources */,
+				4967D4EF274A35430072168A /* FilmsDetailsViewControllerTest.swift in Sources */,
+				49674698274A190700242461 /* FilmsApiRepositoryMock.swift in Sources */,
+				4967469E274A2DA200242461 /* StarshipDetailsViewControllerTest.swift in Sources */,
+				4967469C274A1B9F00242461 /* StarshipsListViewControllerTest.swift in Sources */,
+				496746A0274A328D00242461 /* FilmsListViewControllerTest.swift in Sources */,
+				497235722747DBA000B59201 /* Star_WarsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		497235732747DBA000B59201 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4972357C2747DBA000B59201 /* Star_WarsUITests.swift in Sources */,
+				4972357E2747DBA000B59201 /* Star_WarsUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4972356F2747DBA000B59201 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 497235562747DB9E00B59201 /* Star Wars */;
+			targetProxy = 4972356E2747DBA000B59201 /* PBXContainerItemProxy */;
+		};
+		497235792747DBA000B59201 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 497235562747DB9E00B59201 /* Star Wars */;
+			targetProxy = 497235782747DBA000B59201 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		497235652747DBA000B59201 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				497235662747DBA000B59201 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4972357F2747DBA000B59201 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		497235802747DBA000B59201 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		497235822747DBA000B59201 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Star Wars/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "tejagoud.Star-Wars";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		497235832747DBA000B59201 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Star Wars/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "tejagoud.Star-Wars";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		497235852747DBA000B59201 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sankalp.Star-WarsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Star Wars.app/Star Wars";
+			};
+			name = Debug;
+		};
+		497235862747DBA000B59201 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sankalp.Star-WarsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Star Wars.app/Star Wars";
+			};
+			name = Release;
+		};
+		497235882747DBA000B59201 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sankalp.Star-WarsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Star Wars";
+			};
+			name = Debug;
+		};
+		497235892747DBA000B59201 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sankalp.Star-WarsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Star Wars";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		497235522747DB9E00B59201 /* Build configuration list for PBXProject "Star Wars" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4972357F2747DBA000B59201 /* Debug */,
+				497235802747DBA000B59201 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		497235812747DBA000B59201 /* Build configuration list for PBXNativeTarget "Star Wars" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				497235822747DBA000B59201 /* Debug */,
+				497235832747DBA000B59201 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		497235842747DBA000B59201 /* Build configuration list for PBXNativeTarget "Star WarsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				497235852747DBA000B59201 /* Debug */,
+				497235862747DBA000B59201 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		497235872747DBA000B59201 /* Build configuration list for PBXNativeTarget "Star WarsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				497235882747DBA000B59201 /* Debug */,
+				497235892747DBA000B59201 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		497235A72747FD0100B59201 /* XCRemoteSwiftPackageReference "PromiseKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mxcl/PromiseKit.git";
+			requirement = {
+				branch = v6;
+				kind = branch;
+			};
+		};
+		497235AA2747FEC800B59201 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		497235A82747FD0100B59201 /* PromiseKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 497235A72747FD0100B59201 /* XCRemoteSwiftPackageReference "PromiseKit" */;
+			productName = PromiseKit;
+		};
+		497235AB2747FEC800B59201 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 497235AA2747FEC800B59201 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 4972354F2747DB9E00B59201 /* Project object */;
+}
