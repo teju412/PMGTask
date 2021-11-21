@@ -3,8 +3,8 @@
 - [Features](#features)
 - [FolderStructure](#folder-structure)
 - [ScreenShots](#screenshots)
-- [Test coverage](#test-coverage)
-
+- [Test Coverage](#test-coverage)
+- [Architecture Diagram](#architecture-diagram)
 
 # Features
 - Home Page with TabBar of Films and Starships 
@@ -71,3 +71,9 @@ Library
 # Test Coverage
 
 <img src="https://user-images.githubusercontent.com/18598946/142763239-1a5bf4dd-8e57-4afd-a56a-c4c8ecead4d7.png" width="2800" height="238"/>
+
+
+
+# Architecture Diagram
+
+<img src="https://user-images.githubusercontent.com/18598946/142764115-fb91402a-028c-43bc-bca5-329ffe1d894e.png" width="3000" height="700"/>
