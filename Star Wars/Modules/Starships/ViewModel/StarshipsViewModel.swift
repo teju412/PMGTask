@@ -22,7 +22,7 @@ final class StarshipsViewModel: IStarshipsViewModel {
     var starshipDetails: Starship?
     var starshipsTableData: [StarshipsTableViewCellViewModel] = []
     
-    let starshipRepository: IStarshipsApiRepository
+    let starshipRepository: IStarshipsApiRepository 
     
     init(starshipRepository: IStarshipsApiRepository = StarshipsApiRepository()) {
         self.starshipRepository = starshipRepository
